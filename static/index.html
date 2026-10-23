@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat Seguro CIA</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <main class="chat">
+        <header>
+            <h2>🔐 Chat Seguro CIA</h2>
+            <p>Cifrado Fernet e integridad HMAC-SHA256</p>
+        </header>
+
+        <section class="usuarios">
+            <label for="usuario">Usuario actual:</label>
+            <select id="usuario">
+                <option value="1">Alice</option>
+                <option value="2">Bob</option>
+            </select>
+            <span id="contacto"></span>
+        </section>
+
+        <section id="mensajes" class="mensajes"></section>
+
+        <form id="formulario">
+            <input
+                id="texto"
+                type="text"
+                placeholder="Escribe un mensaje..."
+                maxlength="1000"
+                required
+            >
+            <button type="submit">Enviar ➤</button>
+        </form>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
